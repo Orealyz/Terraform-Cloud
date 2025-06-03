@@ -24,11 +24,11 @@ jobs:
 
       - name: Terraform Init
         run: terraform init
-        working-directory: tp1
+        working-directory: tp
 
       - name: Terraform Plan
         run: terraform plan -out=tfplan
-        working-directory: tp1
+        working-directory: tp
 
       - name: Terraform Apply
         if: github.ref == 'refs/heads/main'
